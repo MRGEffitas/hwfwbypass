@@ -1,0 +1,1 @@
+BUG1: the statically linked files are not working on some Windows versions
