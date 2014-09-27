@@ -249,6 +249,8 @@ int __cdecl main(int argc, char **argv)
 			pack->tcp.Psh = tcp_header->Psh;
 			pack->tcp.Urg = tcp_header->Urg;
 			pack->tcp.Window = tcp_header->Window;
+			pack->tcp.Reserved1 = tcp_header->Reserved1;
+			pack->tcp.Reserved2 = tcp_header->Reserved2;
 			pack->tcp.Checksum = tcp_header->Checksum;
 
 			if (!disablechecksum){
@@ -310,6 +312,8 @@ int __cdecl main(int argc, char **argv)
 			divert->header.tcp.Urg = tcp_header->Urg;
 			divert->header.tcp.Window = tcp_header->Window;
 			divert->header.tcp.Checksum = tcp_header->Checksum;
+			divert->header.tcp.Reserved1 = tcp_header->Reserved1;
+			divert->header.tcp.Reserved2 = tcp_header->Reserved2;
 
 			if (payload != NULL) {
 				memcpy(divert->data, payload, payload_len);

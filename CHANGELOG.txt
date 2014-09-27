@@ -1,0 +1,10 @@
+
+v1.01 Release - 27 September, 2014
+Bugfix Release:
+
+Bug#1: TCP option headers were not correctly copied, thus the application failed to work in environments where those headers were essential
+Bug#2: The 32 bit compiled binary was not correctly linked to the same dll files as in the directory, thus failed to work.
+
+
+------------------------------------------------
+v1.0 Initial Version Released - August 8, 2014
